@@ -3,20 +3,20 @@ package kr.ac.kopo.colaBank.accountManager.vo;
 public class AccountVO {
 
     private String id;
-    private int accountNumber;
+    private String accountNumber;
     private String bank;
     private double balance;
-    private String grade;
+    private String nickname;
 
     public AccountVO() {
     }
 
-    public AccountVO(String id, int accountNumber, String bank, double balance, String grade) {
+    public AccountVO(String id, String accountNumber, String bank, double balance, String nickname) {
         this.id = id;
         this.accountNumber = accountNumber;
         this.bank = bank;
         this.balance = balance;
-        this.grade = grade;
+        this.nickname = nickname;
     }
 
     public String getId() { return id; }
@@ -25,11 +25,11 @@ public class AccountVO {
         this.id = id;
     }
 
-    public int getAccountNumber() {
+    public String getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(int accountNumber) {
+    public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
 
@@ -49,11 +49,11 @@ public class AccountVO {
         this.balance = balance;
     }
 
-    public String getGrade() {
-        return grade;
+    public String getNickname() {
+        return nickname;
     }
 
-    public void setGrade(String grade) {
-        this.grade = grade;
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 }

@@ -21,7 +21,6 @@ public class SignInUI extends BaseUI {
         if(member != null){
             System.out.println("로그인을 하였습니다.");
             bLogin = true;
-
         }
         else {
             System.out.println("로그인을 실패하였습니다. 아이디와 비밀번호를 확인해주세요.");

@@ -6,22 +6,19 @@ import kr.ac.kopo.colaBank.ui.BaseUI;
 
 import java.util.List;
 
-public class SearchAllUI extends BaseUI {
-
+public class ByBankUI extends BaseUI {
     @Override
     public void execute() throws Exception {
-        System.out.println("전체 계좌 조회 서비스입니다.");
-
+        System.out.println("은행별 계좌를 조회하실 수 있습니다.");
         AccountService service = new AccountService();
-        List<AccountVO> list = service.searchAll();
+        List<AccountVO> list = service.accountByBank();
 
-        ////////////////////////////
-        // print
+        ////////////////////////////// print
 
         System.out.println();
 
-        ///////////////////////////
-
+        ////////////////////////////////////
 
     }
+
 }

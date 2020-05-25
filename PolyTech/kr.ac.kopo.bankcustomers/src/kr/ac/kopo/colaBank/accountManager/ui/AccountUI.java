@@ -7,39 +7,34 @@ import kr.ac.kopo.colaBank.ui.IUI;
 
 public class AccountUI extends BaseUI {
     @Override
-    public boolean execute() throws Exception {
+    public void execute() throws Exception {
 
         int type;
         IUI ui = null;
 
         while (true) {
-
             type = choiceMenu();
             switch (type) {
                 case 1:
-                    ui = null;
+                    ui = new CreateUI();
                     break;
                 case 2:
-                    ui = null;
+                    ui = new ManageUI();
                     break;
                 case 3:
-                    ui = null;
+                    ui = new SearchOneUI();
                     break;
                 case 4:
-                    ui = null;
-                    break;
-                case 5:
                     ui = new SearchAllUI();
                     break;
-                case 6:
-                    ui = null;
+                case 5:
+                    ui = new ByBankUI();
                     break;
-                case 7:
-                    ui = null;
+                case 6:
+                    ui = new MoveMoneyUI();
                     break;
                 case 0:
                     ui = new ExitUI();
-
                     break;
             }
 

@@ -12,12 +12,8 @@ public class LoginService {
     }
 
     public LoginVO signIn(LoginVO member) {
-
         LoginVO loginVO = null;
-
         loginVO = loginDAO.signIn(member);
-
         return loginVO;
-
     }
 }

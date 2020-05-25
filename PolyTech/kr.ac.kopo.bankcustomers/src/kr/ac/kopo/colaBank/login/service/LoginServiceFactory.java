@@ -9,7 +9,6 @@ public class LoginServiceFactory {
         if(service == null) {
             service = new LoginService();
         }
-
         return service;
     }
 }

@@ -10,7 +10,6 @@ public class BaseDAO {
 
     public static Connection conn;
     public static PreparedStatement pstmt;
-
     public static String userId = null;
 
     public BaseDAO() {
